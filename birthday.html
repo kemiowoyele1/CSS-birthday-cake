@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>happy birthday</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    .container{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        background: rgb(245, 35, 98);
+    }
+    .cake-container{
+        position: absolute;
+        height: 60%;
+        width: 50%;
+        /* overflow: hidden; */
+        top: 40%;
+        left: 25%;
+           
+    }
+    .cake{
+        position: absolute;
+        height: 40%;
+        width: 90%;
+        overflow: hidden;
+        top: 40%;
+        left: 5%;
+        background: rgb(4,204,207);
+        background: linear-gradient(90deg, rgba(4,204,207,1) 0%, rgba(0,255,248,1) 48%, rgba(4,204,207,1) 100%);
+        box-shadow: inset 0 0 5px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0);  
+  }
+  .cake::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        top: 0%;
+        left: 0%;
+        background: rgb(4,204,207);
+        background: linear-gradient(90deg, rgba(4,204,207,1) 0%, rgba(0,255,248,1) 48%, rgba(4,204,207,1) 100%);
+        background-size: 20px 10px;
+        opacity: 0.3;
+        box-shadow: inset 0 0 5px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0);  
+  }
+ .candle{
+        position: absolute;
+        height: 40%;
+        width: 4%;
+        overflow: hidden;
+        top: 10%;
+        left: 48%;
+        background: rgb(32,60,148);
+background: linear-gradient(225deg, rgba(32,60,148,1) 0%, rgba(252,0,148,1) 0%, rgba(250,14,183,1) 0%, rgba(255,7,138,1) 7%, rgba(244,244,244,0.9949922739348797) 7%, rgba(249,250,250,0.9918866838727679) 24%, rgba(254,0,159,0.9949922739348797) 24%, rgba(255,3,183,1) 47%, rgba(249,249,252,1) 47%, rgba(255,255,255,1) 69%, rgba(255,0,135,1) 69%, rgba(255,0,140,1) 86%, rgba(241,241,246,0.9825699136864324) 86%, rgba(244,244,247,0.9825699136864324) 100%);
+box-shadow: inset 0 0 5px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0); 
+     
+}
+.toppins{
+    position: absolute;
+        height: 10%;
+        width: 10%;
+        overflow: hidden;
+        top: 0%;
+        left: 48%;
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.671), 0 0 3px rgb(0, 0, 0); 
+        border-radius: 100% 100% 100% 0;
+        background: rgb(253,253,253);
+background: linear-gradient(135deg, rgba(253,253,253,1) 12%, rgba(138, 133, 125, 0.2) 14%,
+ rgba(246,245,243,1) 15%, rgba(250,250,250,1) 36%, rgba(179, 175, 171, 0.2) 38%, rgba(246,246,246,1) 40%,
+  rgba(255,255,255,1) 55%, rgba(138, 130, 123, 0.2) 56%, rgba(251,251,251,1) 58%, 
+rgba(255,255,255,1) 76%, rgba(139, 137, 134, 0.2) 77%, rgba(255,255,255,1) 78%);
+background-size: 50% 50%;
+}
+.toppins1{
+    top: 70%;
+    left: 2%;
+  }
+.toppins2{
+    top: 70%;
+    left: 8%;
+  }
+  
+.toppins3{
+    top: 70%;
+    left: 14%;
+  }
+.toppins4{
+    top: 70%;
+    left: 20%;
+  }
+.toppins5{
+    top: 70%;
+    left: 26%;
+  }
+.toppins6{
+    top: 70%;
+    left: 32%;
+  }
+.toppins7{
+    top: 70%;
+    left: 38%;
+  }
+  
+.toppins8{
+    top: 70%;
+    left: 44%;
+  }
+.toppins9{
+    top: 70%;
+    left: 50%;
+  }
+.toppins10{
+    top: 70%;
+    left: 56%;
+  }
+.toppins11{
+    top: 70%;
+    left: 62%;
+  }
+.toppins12{
+    top: 70%;
+    left: 68%;
+  }
+.toppins13{
+    top: 70%;
+    left: 74%;
+  }
+.toppins14{
+    top: 70%;
+    left: 80%;
+  }
+.toppins15{
+    top: 70%;
+    left: 86%;
+  }
+.toppins16{
+    top: 70%;
+    left: 92%;
+    width: 7%;
+  }
+.toppinsa{
+    top: 32%;
+    left: 3%;
+    transform: rotate(135deg);
+    height: 10%;
+    width: 7%;
+    border-radius: 30% 50% 30% 0;
+  }
+  .toppinsa2{
+    top: 32%;
+    left: 9%;
+  }
+  .toppinsa3{
+    top: 32%;
+    left: 15%;
+  }
+  .toppinsa4{
+    top: 32%;
+    left: 21%;
+  }
+  .toppinsa5{
+    top: 32%;
+    left: 27%;
+  }
+
+  .toppinsa6{
+    top: 32%;
+    left: 33%;
+  }
+  .toppinsa7{
+    top: 32%;
+    left: 39%;
+  }
+  .toppinsa8{
+    top: 32%;
+    left: 45%;
+  }
+  .toppinsa9{
+    top: 32%;
+    left: 51%;
+  }
+  .toppinsa10{
+    top: 32%;
+    left: 57%;
+  }
+  .toppinsa11{
+    top: 32%;
+    left: 63%;
+  }
+  .toppinsa12{
+    top: 32%;
+    left: 69%;
+  }
+  .toppinsa13{
+    top: 32%;
+    left: 75%;
+  }
+  .toppinsa14{
+    top: 32%;
+    left: 81%;
+  }
+  .toppinsa15{
+    top: 32%;
+    left: 87%;
+  }
+  .toppinsa16{
+    top: 32%;
+    left: 93%;
+    width: 5%;
+    height: 10%;
+  }
+.glass{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 10%;
+    top: 72%;
+    background-color: rgba(2, 0, 0, 0.233);
+    z-index: 10;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0), 0 0 5px rgb(0, 0, 0); 
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background: rgb(4,204,207);
+background: radial-gradient(circle, rgba(4,204,207,0.013625814307550499) 20%, rgba(0,255,248,0.19685562797214673) 77%,
+ rgba(4,204,207,0.4484084230032026) 100%);
+}
+
+.glass2{
+    position: absolute;
+    width: 15%;
+    left: 42.5%;
+    height: 13%;
+    top: 82%;
+    background-color: rgba(2, 0, 0, 0.233);
+    z-index: 10;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0), 0 0 5px rgb(0, 0, 0); 
+    background: rgb(4,204,207);
+background: linear-gradient(90deg, rgba(4,204,207,0.7030668080963703) 0%, rgba(0,255,248,0.19685562797214673) 46%, rgba(4,204,207,0.4484084230032026) 100%);
+}
+.glass3{
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    height: 5%;
+    top: 95%;
+    background-color: rgba(2, 0, 0, 0.233);
+    z-index: 10;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0), 0 0 5px rgb(0, 0, 0); 
+    background: rgb(4,204,207);
+background: linear-gradient(90deg, rgba(4,204,207,0.7030668080963703) 0%, rgba(0,255,248,0.19685562797214673) 46%, rgba(4,204,207,0.4484084230032026) 100%);
+border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+  
+}
+.light{
+    position: absolute;
+    width: 6%;
+    left: 47%;
+    height: 10%;
+    top: -3%;
+    background: rgb(250,191,6);
+background: radial-gradient(circle, rgba(250,191,6,1) 0%, rgba(224,90,13,0.8241848205187305) 46%, rgba(168,70,4,0.7651786093386064) 100%);
+border-radius: 100% 30% 100% 0;
+transform: rotate(134deg);
+animation: light 1s ease infinite;
+box-shadow: inset 0 0 2px rgba(80, 32, 32, 0.4), 0 0 2px rgba(51, 31, 31, 0.678); 
+z-index: 10;
+ 
+}
+.light2{
+    position: absolute;
+    width: 1%;
+    left: 49.5%;
+    height: 4%;
+    top: 6%;
+    background: rgb(54, 40, 36);
+box-shadow: inset 0 0 2px rgba(80, 32, 32, 0.4), 0 0 2px rgba(51, 31, 31, 0.678); 
+}
+@keyframes light{
+    100%{
+    height: 12%;
+    top: -5%;
+    }
+}
+.message{
+    position: absolute;
+    width: 1%;
+    left: 49%;
+    height: 4%;
+    top: 50%;
+    filter: blur(100px);
+    animation: message  2s 1 both;
+    font-size: 100px;
+    font-weight: bolder;
+      text-align: center;
+    color: rgb(248, 248, 248);
+}
+@keyframes message{
+    100%{
+        filter: blur(0px);
+        top: 2%;
+        left: 2%;
+    }
+}
+.name{
+    position: absolute;
+    width: 1%;
+    left: 5%;
+    height: 4%;
+    top: 5%;
+    filter: blur(100px);
+    animation: name  2s 1 both;
+    font-size: 100px;
+    font-weight: bolder;
+      text-align: center;
+    color: rgb(248, 248, 248);
+    animation-delay: 2s;
+}
+@keyframes name{
+    100%{
+        filter: blur(0px);
+        top: 2%;
+        left: 62%;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="container">
+            <div class="message">Happy Birthday</div>
+            <div class="name">Grace</div>
+           
+        <div class="cake-container">
+            <div class="candle"></div>
+            <div class="light"></div>
+            <div class="light2"></div>
+            <div class="cake"></div>
+            <div class="glass"></div>
+            <div class="glass2"></div>
+            <div class="glass3"></div>
+            <div class="toppins toppins1"></div>
+            <div class="toppins toppins2"></div>
+            <div class="toppins toppins3"></div>
+            <div class="toppins toppins4"></div>
+            <div class="toppins toppins5"></div>
+            <div class="toppins toppins6"></div>
+            <div class="toppins toppins7"></div>
+            <div class="toppins toppins8"></div>
+            <div class="toppins toppins9"></div>
+            <div class="toppins toppins10"></div>
+            <div class="toppins toppins11"></div>
+            <div class="toppins toppins12"></div>
+            <div class="toppins toppins13"></div>
+            <div class="toppins toppins14"></div>
+            <div class="toppins toppins15"></div>
+            <div class="toppins toppins16"></div>
+            <div class="toppins toppinsa1 toppinsa"></div>
+            <div class="toppins toppinsa2 toppinsa"></div>
+            <div class="toppins toppinsa3 toppinsa"></div>
+            <div class="toppins toppinsa4 toppinsa"></div>
+            <div class="toppins toppinsa5 toppinsa"></div>
+            <div class="toppins toppinsa6 toppinsa"></div>
+            <div class="toppins toppinsa7 toppinsa"></div>
+            <div class="toppins toppinsa8 toppinsa"></div>
+            <div class="toppins toppinsa9 toppinsa"></div>
+            <div class="toppins toppinsa10 toppinsa"></div>
+            <div class="toppins toppinsa11 toppinsa"></div>
+            <div class="toppins toppinsa12 toppinsa"></div>
+            <div class="toppins toppinsa13 toppinsa"></div>
+            <div class="toppins toppinsa14 toppinsa"></div>
+            <div class="toppins toppinsa15 toppinsa"></div>
+            <div class="toppins toppinsa16 toppinsa"></div>
+            <div class="toppins toppinsa17 toppinsa"></div>
+
+        </div>
+    </div>
+</body>
+</html>
